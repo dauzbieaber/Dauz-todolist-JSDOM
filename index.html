@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Interaktif Bieber</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>To-Do List Bieber</h1>
+
+        <!-- Input tugas dan tombol tambah -->
+        <div class="input-area">
+            <input type="text" id="input-tugas" placeholder="Tulis tugas baru..." autocomplete="off">
+            <button id="btn-tambah">Tambah</button>
+        </div>
+
+        <!-- Statistik tugas -->
+        <div class="statistik">
+            <div class="kotak">
+                <p>Total Tugas</p>
+                <span id="total-tugas">0</span>
+            </div>
+            <div class="kotak">
+                <p>Selesai</p>
+                <span id="tugas-selesai">0</span>
+            </div>
+            <div class="kotak">
+                <p>Belum Selesai</p>
+                <span id="tugas-belum">0</span>
+            </div>
+        </div>
+
+        <!-- Daftar tugas (isinya dibuat oleh JavaScript) -->
+        <ul id="daftar-tugas"></ul>
+    </div>
+
+    <!-- JavaScript diletakkan di akhir body -->
+    <script src="script.js"></script>
+</body>
+
+</html>
